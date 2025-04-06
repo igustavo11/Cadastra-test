@@ -10,7 +10,7 @@ import clientes from "../../public/images/clientes.svg";
 
 export default function Sidebar() {
   return (
-    <div className="flex h-screen w-64 flex-col justify-between bg-white p-4 shadow-md">
+    <div className="h-screen min-w-[280px] flex flex-col justify-between bg-white p-4 shadow-md">
       <div className="space-y-6 ml-1 font-semibold ">
         <div className="flex h-16 items-center justify-center">
           <Image src={logo} alt="Logo" />

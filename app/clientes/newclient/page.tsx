@@ -37,7 +37,7 @@ export default function NewClient() {
   };
 
   return (
-    <div className="p-16 mx-auto w-[1160px]  mt-8 text-left bg-gray-50">
+    <div className="p-16 mx-auto w-[1160px]  mt-8 text-left ">
       <div className="max-w-[948px] ml-4">
         <div className="flex items-center mb-10">
           <Link href="/">

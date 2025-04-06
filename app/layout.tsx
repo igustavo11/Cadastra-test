@@ -25,7 +25,7 @@ export default function RootLayout({
       <body className="antialiased">
         <div className="flex">
           <Sidebar />
-          <main className="flex-1">
+          <main className="flex-1 bg-gray-50">
             <ClientProvider>{children}</ClientProvider>
             <ToastContainer position="top-right" autoClose={3000} />
           </main>

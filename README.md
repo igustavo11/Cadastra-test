@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Projeto de Teste - Cadastra
 
-## Getting Started
+Este projeto foi desenvolvido como parte de um teste técnico para a Cadastra, utilizando as tecnologias mais modernas para criar uma aplicação eficiente e estilosa.
 
-First, run the development server:
+## Tecnologias Utilizadas
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Next.js 15**: Framework React para construção de aplicações web rápidas e escaláveis.
+- **Tailwind CSS 3**: Framework de utilitários CSS para estilização rápida e responsiva.
+- **useContext**: Gerenciamento de estado global de forma simples e eficiente.
+- **useState**: Hook do React para gerenciamento de estado local.
+- **Toasty**: Biblioteca para exibição de notificações amigáveis e personalizáveis.
+- **Lucide**: Conjunto de ícones modernos e personalizáveis.
+- **shadcn**: Componentes estilizados e acessíveis para construção de interfaces.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Funcionalidades
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Gerenciamento de estado global com Context API.
+- Notificações dinâmicas utilizando Toasty.
+- Interface moderna e responsiva com Tailwind CSS e componentes do shadcn.
+- Ícones elegantes e personalizáveis com Lucide.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Como Executar o Projeto
 
-## Learn More
+1. Clone o repositório:
 
-To learn more about Next.js, take a look at the following resources:
+   git clone
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. Instale as dependências:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+   npm install
 
-## Deploy on Vercel
+3. Inicie o servidor de desenvolvimento:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   npm run dev
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+4. Acesse a aplicação em [http://localhost:3000](http://localhost:3000).
+
+## Conclusão
+
+Este projeto foi realizado para um cadastro de clientes na plataforma usando os conceitos basicos do react/next

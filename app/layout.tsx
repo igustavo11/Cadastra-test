@@ -21,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-br" className={`${inter.variable} font-sans`}>
+    <html lang="en" className={`${inter.variable} font-sans`}>
       <body className="antialiased">
         <div className="flex">
           <Sidebar />

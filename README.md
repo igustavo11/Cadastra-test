@@ -5,20 +5,17 @@ Este projeto foi desenvolvido como parte de um teste técnico para a Cadastra, u
 ## Tecnologias Utilizadas
 
 - **Next.js 15**: Framework React para construção de aplicações web rápidas e escaláveis.
-- **Tailwind CSS 3**: Framework de utilitários CSS para estilização rápida e responsiva.
+- **Tailwind CSS 3**: Framework de utilitários CSS para estilização rápida.
 - **useContext**: Gerenciamento de estado global de forma simples e eficiente.
 - **useState**: Hook do React para gerenciamento de estado local.
-- **Toasty**: Biblioteca para exibição de notificações amigáveis e personalizáveis.
-- **Lucide**: Conjunto de ícones modernos e personalizáveis.
-- **shadcn**: Componentes estilizados e acessíveis para construção de interfaces.
+- **Toasty**: Biblioteca para exibição de notificações.
+- **Lucide**: Conjunto de ícones modernos.
+- **shadcn**: Componentes para construção de interfaces.
 
 ## Funcionalidades
 
-- Gerenciamento de estado global com Context API.
-- Notificações dinâmicas utilizando Toasty.
-- Interface moderna com Tailwind CSS e componentes do shadcn.
-- Ícones com Lucide.
-
+- Cadastro de clientes no botao novo cliente
+- Pesquisa pelo nome dos clientes
 ## Como Executar o Projeto
 
 1. Clone o repositório:

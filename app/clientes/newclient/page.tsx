@@ -7,8 +7,10 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { useClientContext } from "@/lib/ClientContext";
 import { toast } from "react-toastify";
+import { useRouter } from "next/navigation";
 
 export default function NewClient() {
+  const router = useRouter();
   const { addClient } = useClientContext();
 
   const [brandName, setBrandName] = useState("");
@@ -35,6 +37,8 @@ export default function NewClient() {
     addClient(newClient);
     toast.success("Cliente adicionado com sucesso!");
     // console.log(newClient);
+
+    router.push("/");
   };
 
   return (

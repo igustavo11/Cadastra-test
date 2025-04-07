@@ -76,7 +76,7 @@ export default function Clientes() {
         ) : (
           <div className="p-6 text-center">
             <p className="text-textcard font-medium">
-              Nenhum cliente encontrado para esta pesquisa.
+              Nenhum cliente encontrado para esta pesquisa
             </p>
           </div>
         )}

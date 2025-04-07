@@ -7,6 +7,7 @@ import iconavatar from "../../public/images/avatar.png";
 import logo from "../../public/images/logoCadastra.svg";
 import Image from "next/image";
 import clientes from "../../public/images/clientes.svg";
+import Link from "next/link";
 
 export default function Sidebar() {
   return (
@@ -22,10 +23,12 @@ export default function Sidebar() {
             <span>Home</span>
           </div>
 
-          <div className="flex items-center gap-3 rounded-md px-3 py-2 text-base font-semibold bg-card-background text-primary">
-            <Image src={clientes} alt="clientes" />
-            <span>Clientes</span>
-          </div>
+          <Link href="/">
+            <div className="flex items-center gap-3 rounded-md px-3 py-2 text-base font-semibold bg-card-background text-primary">
+              <Image src={clientes} alt="clientes" />
+              <span>Clientes</span>
+            </div>
+          </Link>
         </div>
       </div>
 

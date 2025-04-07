@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
-import { Search, Plus } from "lucide-react";
+import { Search, CirclePlus } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import Link from "next/link";
@@ -50,7 +50,7 @@ export default function Clientes() {
             </div>
             <Link href="/clientes/newclient">
               <Button className="bg-gradient-to-r from-primary to-secondary text-white font-medium rounded-full px-5 py-2 mr-6">
-                Novo Cliente <Plus className="w-4 h-4 ml-2" />
+                Novo Cliente <CirclePlus className="w-4 h-4 ml-2" />
               </Button>
             </Link>
           </div>

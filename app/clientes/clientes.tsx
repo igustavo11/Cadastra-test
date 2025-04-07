@@ -12,30 +12,28 @@ export default function Clientes() {
   const { clients } = useClientContext();
 
   // funcao para fazer a busca
-  const [searchTerm, setSearchTerm] = useState("");
+  const [search, setSearch] = useState("");
 
   const handleSearchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setSearchTerm(event.target.value);
+    setSearch(event.target.value);
   };
 
-  const lowerCaseSearchTerm = searchTerm.trim().toLowerCase();
-  const upperCaseSearchTerm = searchTerm.trim().toUpperCase();
-
-  const notNumbers = /^[0-9]+$/.test(searchTerm);
+  const lowerSearch = search.trim().toLowerCase();
+  const upperSearch = search.trim().toUpperCase();
 
   const filteredClients = clients.filter((client) => {
-    if (lowerCaseSearchTerm === "" || notNumbers) {
+    if (lowerSearch === "") {
       return true;
     }
     const initials = client.name.substring(0, 2).toUpperCase();
     return (
-      client.name.toLowerCase().includes(lowerCaseSearchTerm) ||
-      initials.includes(upperCaseSearchTerm)
+      client.name.toLowerCase().includes(lowerSearch) ||
+      initials.includes(upperSearch)
     );
   });
 
   return (
-    <div className="p-6 mx-auto w-[1160px]  mt-8 ">
+    <div className="p-6 mx-auto w-[1160px] mt-8 ">
       <div className="max-w-[948px]">
         <div className="flex items-center justify-between mb-8 ">
           <h1 className="text-2xl font-semibold ml-7 ">Clientes</h1>
@@ -46,7 +44,7 @@ export default function Clientes() {
                 type="text"
                 placeholder="Buscar"
                 className="pl-10 h-10 "
-                value={searchTerm}
+                value={search}
                 onChange={handleSearchChange}
               />
             </div>
@@ -57,23 +55,31 @@ export default function Clientes() {
             </Link>
           </div>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 p-6 ">
-          {filteredClients.map((client) => (
-            <div
-              key={client.name}
-              className=" max-w-[180px] max-h-[110px] rounded-[12px] shadow p-6 flex flex-col items-start border border-border bg-white"
-            >
-              <Avatar className="mb-3">
-                <AvatarFallback className="bg-iconcard text-textcard font-semibold">
-                  {client.name.substring(0, 2).toUpperCase()}
-                </AvatarFallback>
-              </Avatar>
-              <span className="font-medium text-sm text-foreground">
-                {client.name}
-              </span>
-            </div>
-          ))}
-        </div>
+        {filteredClients.length > 0 ? (
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 p-6 ">
+            {filteredClients.map((client) => (
+              <div
+                key={client.name}
+                className="max-w-[180px] max-h-[110px] rounded-[12px] shadow p-6 flex flex-col items-start border border-border bg-white"
+              >
+                <Avatar className="mb-3">
+                  <AvatarFallback className="bg-iconcard text-textcard font-semibold">
+                    {client.name.substring(0, 2).toUpperCase()}
+                  </AvatarFallback>
+                </Avatar>
+                <span className="font-medium text-sm text-foreground">
+                  {client.name}
+                </span>
+              </div>
+            ))}
+          </div>
+        ) : (
+          <div className="p-6 text-center">
+            <p className="text-textcard font-medium">
+              Nenhum cliente encontrado para esta pesquisa.
+            </p>
+          </div>
+        )}
       </div>
     </div>
   );

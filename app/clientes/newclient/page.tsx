@@ -34,6 +34,7 @@ export default function NewClient() {
 
     addClient(newClient);
     toast.success("Cliente adicionado com sucesso!");
+    // console.log(newClient);
   };
 
   return (

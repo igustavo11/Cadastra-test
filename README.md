@@ -16,8 +16,8 @@ Este projeto foi desenvolvido como parte de um teste técnico para a Cadastra, u
 
 - Gerenciamento de estado global com Context API.
 - Notificações dinâmicas utilizando Toasty.
-- Interface moderna e responsiva com Tailwind CSS e componentes do shadcn.
-- Ícones elegantes e personalizáveis com Lucide.
+- Interface moderna com Tailwind CSS e componentes do shadcn.
+- Ícones com Lucide.
 
 ## Como Executar o Projeto
 

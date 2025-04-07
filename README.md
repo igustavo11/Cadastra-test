@@ -33,7 +33,7 @@ Este projeto foi desenvolvido como parte de um teste técnico para a Cadastra, u
 
    npm run dev
 
-4. Acesse a aplicação em [http://localhost:3000](http://localhost:3000).
+4. Acesse a aplicação demo em [https://previewdemo.vercel.app/](https://previewdemo.vercel.app/).
 
 ## Conclusão
 

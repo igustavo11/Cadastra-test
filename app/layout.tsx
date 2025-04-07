@@ -27,7 +27,7 @@ export default function RootLayout({
           <Sidebar />
           <main className="flex-1 bg-gray-50">
             <ClientProvider>{children}</ClientProvider>
-            <ToastContainer position="top-right" autoClose={3000} />
+            <ToastContainer position="bottom-right" autoClose={3000} />
           </main>
         </div>
       </body>

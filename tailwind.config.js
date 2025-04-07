@@ -17,6 +17,9 @@ module.exports = {
         textcard: "#3F3F3F",
         iconcard: "#F9F9F9",
       },
+      fontFamily: {
+        sans: ['var(--font-inter)', 'sans-serif'],
+      },
     },
   },
   plugins: [],
